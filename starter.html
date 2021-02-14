@@ -16,6 +16,7 @@
     let text =
       "Some of the biggest and most expensive transportation projects in the world have involved building bridges. Bridges are crucial links that carry cars, trucks and trains across bodies of water, mountain gorges or other roads. As a result, they are one of the most important aspects of civil engineering and are subject to intense scrutiny, especially when they collapse. Bridge collapses can be tragic events, leading to loss of life and serious property damage. That is why bridge engineers, designers and builders must always take their jobs very seriously. The best way for them to prevent these accidents is to understand why bridges collapse in the first place. Understanding bridge collapses can lead to major changes in the design, construction and safety of future building projects. The following are main reasons why bridges fall.";
     // remove the periods and commas and make all lowercase letters
+    let original = text;
     text = text.split('.').join("");
     //text = text.replace(/. /g," ");//why does this delete the last letter of every word?
     text = text.replace(/, /g," ");
@@ -41,7 +42,7 @@
     console.log(myArray);
     console.log(frequent);
     html += 
-    '<p1>' + text + '</p1>' + 
+    '<p1>' + original + '</p1>' + 
     '<ol>' + 
       '<li>' + `"${myArray[0][0]}" appears ${myArray[0][1]} times.` + '</li>' + 
       '<li>' + `"${myArray[1][0]}" appears ${myArray[1][1]} times.` + '</li>' + 
