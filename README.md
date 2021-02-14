@@ -10,7 +10,7 @@ Starter code provided by MIT xPro Professional Certificate in Coding Class
 
 ## Link to Project
 
-https://mitchshumway.github.io/WordCount/
+https://mitchshumway.github.io/WordCounter/
 
 ## Contact
 
