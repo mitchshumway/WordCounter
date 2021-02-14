@@ -18,7 +18,16 @@
     // remove the periods and commas and make all lowercase letters
     let original = text;
     text = text.toLowerCase();
+    text = text.replace(/, /g," ");
     text = text.split('. ').join(" ");
+    text = text.split('!').join("");
+    text = text.split('?').join("");
+    text = text.split('&').join("");
+    text = text.split(';').join("");
+    text = text.split('(').join("");
+    text = text.split(')').join("");
+    text = text.split(':').join("");
+    //text = text.replace(/. /g," ");//why does this delete the last letter of every word?
     text = text.split(' and ').join(" ");
     text = text.split(' the ').join(" ");
     text = text.split(' or ').join(" ");
@@ -46,9 +55,6 @@
     text = text.split(' can ').join(" ");
     text = text.split(' more ').join(" ");
     text = text.split(' an ').join(" ");
-    text = text.split(';').join("");
-    text = text.split('(').join("");
-    text = text.split(')').join("");
     text = text.split(' just ').join(" ");
     text = text.split(' from ').join(" ");
     text = text.split(' so ').join(" ");
@@ -111,16 +117,26 @@
     text = text.split(' her ').join(" ");
     text = text.split(' once ').join(" ");
     text = text.split(' well ').join(" ");
+    text = text.split(' became ').join(" ");
+    text = text.split(' who ').join(" ");
+    text = text.split(' mr ').join(" ");
+    text = text.split(' ms ').join(" ");
+    text = text.split(' mrs ').join(" ");
+    text = text.split(' would ').join(" ");
+    text = text.split(' only ').join(" ");
+    text = text.split(' took ').join(" ");
+    text = text.split(' ahead ').join(" ");
+    text = text.split(' put ').join(" ");
     //text = text.split(" it's ").join(" ");
     //text = text.split(" you're ").join(" ");
     //text = text.split(" you'll ").join(" ");
     //text = text.split(" there's ").join(" ");
-    text = text.replace(/ it\'s /g," ");
-    text = text.replace(/ there\'s /g," ");
-    text = text.replace(/ you\'re /g," ");
-    text = text.replace(/ you\'ll /g," ");
-    //text = text.replace(/. /g," ");//why does this delete the last letter of every word?
-    text = text.replace(/, /g," ");
+    //text = text.split(" can't ").join(" ");
+    text = text.replace(/ can't /g," ");
+    text = text.replace(/ it's /g," ");
+    text = text.replace(/ there's /g," ");
+    text = text.replace(/ you're /g," ");
+    text = text.replace(/ you'll /g," ");
     //console.log(text);
 
     const wordArray = text.split(" ");
