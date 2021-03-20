@@ -12,6 +12,10 @@ Starter code provided by MIT xPro Professional Certificate in Coding Class
 
 https://mitchshumway.github.io/WordCounter/
 
+## Link to Portfolio Home Page
+
+mitchshumway.github.io
+
 ## Contact
 
 mshumway1211@gmail.com
