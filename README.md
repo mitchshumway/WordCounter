@@ -14,7 +14,7 @@ https://mitchshumway.github.io/WordCounter/
 
 ## Link to Portfolio Home Page
 
-mitchshumway.github.io
+https://mitchshumway.github.io
 
 ## Contact
 
